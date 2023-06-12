@@ -3,25 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Mini Game - Adivinhe a Cor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.3.1/howler.min.js"></script>
+  <style>
+    /* Adicione os estilos personalizados aqui */
+  </style>
 </head>
 <body>
   <div class="container">
     <div id="character"></div>
-    <h1>Bem-vindo(a) ao Mini Game</h1>
-    <p>Clique para iniciar!</p>
-    <button onclick="startGame()">Iniciar</button>
-    <div id="game">
-      <h2>Adivinhe a Cor</h2>
+    <h1 class="text-center">Bem-vindo(a) ao Mini Game</h1>
+    <p class="text-center">Clique para iniciar!</p>
+    <button onclick="startGame()" class="btn btn-primary btn-block">Iniciar</button>
+    <div id="game" style="display: none;">
+      <h2 class="text-center">Adivinhe a Cor</h2>
       <div class="score">Pontuação: <span id="score">0</span></div>
-      <div id="color-box"></div>
-      <button id="audio-button" onclick="playAudio()">Ouvir Cor</button>
+      <div id="color-box" class="mx-auto"></div>
+      <button id="audio-button" onclick="playAudio()" class="btn btn-primary btn-block">Ouvir Cor</button>
       <div class="input-container">
-        <input type="text" id="color-input" placeholder="Digite a cor">
-        <button onclick="checkColor()">Verificar</button>
+        <input type="text" id="color-input" placeholder="Digite a cor" class="form-control">
+        <button onclick="checkColor()" class="btn btn-primary btn-block">Verificar</button>
       </div>
-      <p id="message"></p>
+      <p id="message" class="text-center"></p>
       <div class="instructions">
         <h3>Instruções:</h3>
         <ul>
