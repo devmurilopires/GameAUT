@@ -28,7 +28,6 @@ h1 {
   transform: translate(0, -50%);
   width: 180px;
   height: 180px;
-  background-image: url("character.png");
   background-size: cover;
 }
 
